@@ -1,4 +1,5 @@
-= Haml Filter
+HAML Filter extension
 
-Original by Dan Higham
-http://github.com/danhigham/radiant/commit/dcf42073146fdc5cd8c268e32bc62e963959446f
+This extension was Originally by Dan Higham with contributions by Jim Gay and Jordon Bedwell (EnvyGeeks).  
+If you plan to use this extension please make sure to remember that HAML is very sensitive to white space
+and that HAML is not very good with inline elements so it's best to combine HAML and markdown or textile.
