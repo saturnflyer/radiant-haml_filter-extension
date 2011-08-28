@@ -1,23 +1,25 @@
-# use rdiscount or bluecloth.
-# haml supports more but these are preferred (subjective)
-# cleaner to use a gem than to try and bundle markdowns bluecloth.
+# Use rdiscount or bluecloth. Haml supports more but these are
+# preferred (subjective) cleaner to use a gem than to try and
+# bundle markdowns bluecloth.
 
 begin
-  require 'bluecloth'
+  require "bluecloth"
+  # ^ Preferred still?
 rescue LoadError
   begin
-    require 'rdiscount'
+    require "rdiscount"
+    # ^ Just incase....
   rescue LoadError
-    puts "HAML Filter Extension requires bluecloth or rdiscount!"
+    STDERR.puts "Radiant Haml Extension requires markdown:"
+    STDERR.puts "$user:~ sudo gem install bluecloth"
+    raise LoadError, "Missing dependency: bluecloth or rdiscount."
   end
 end
 
-# and now the fun begins
-
 class HamlFilterExtension < Radiant::Extension
-  version "1.0"
-  description "Allows you to construct pages using Haml"
-  url "http://yourwebsite.com/haml_filter"
+  version "1.1"
+  description "Allows Haml in templates."
+  url "https://github.com/saturnflyer/radiant-haml_filter-extension"
   
   def activate
     HamlFilter
