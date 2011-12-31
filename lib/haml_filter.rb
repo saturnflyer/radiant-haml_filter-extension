@@ -1,4 +1,6 @@
 class HamlFilter < TextFilter
+  description_file File.dirname(__FILE__) + "/../haml.html"
+
   def filter(text)
     original_text = text
     
