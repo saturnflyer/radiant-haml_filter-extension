@@ -1,6 +1,3 @@
 HAML Filter extension
 
-This extension was Originally by Dan Higham with contributions by Jim Gay, Jordon Bedwell (EnvyGeeks)
-and Christian Aust (datenimperator). If you plan to use this extension please make sure to remember that
-HAML is very sensitive to white space and that HAML is not very good with inline elements so it's best
-to combine HAML and markdown or textile.
+This extension was Originally by Dan Higham with contributions by Jim Gay, Jordon Bedwell (EnvyGeeks) and Christian Aust (datenimperator). If you plan to use this extension please make sure to remember thatHAML is very sensitive to white space and that HAML is not very good with inline elements so it's best to combine HAML and markdown or textile.
